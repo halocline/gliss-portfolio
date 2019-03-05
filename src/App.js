@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Portfolio from './portfolio/portfolio'
 
 class App extends Component {
   render() {
@@ -20,6 +21,14 @@ class App extends Component {
             Learn React
           </a>
         </header>
+        <Portfolio />
+        <footer className="App-footer">
+          <ul>
+            <li>Family</li>
+            <li>Hobbies</li>
+            <li>LinkedIn</li>
+          </ul>
+        </footer>
       </div>
     );
   }

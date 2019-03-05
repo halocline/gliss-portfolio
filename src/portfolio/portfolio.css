@@ -1,0 +1,9 @@
+.Portfolio {
+  background: linear-gradient(#e66465, #9198e5);
+}
+.portfolio-cards {
+  padding: 60px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
