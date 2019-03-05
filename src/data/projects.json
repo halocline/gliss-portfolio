@@ -4,24 +4,40 @@
     "name": "Market Polygons",
     "description": "Uses GeoJSON + turf.js to create a polygon for a market defined by a list of zipcodes.",
     "url": "https://www.google.com",
-    "gitHubUrl": "https://www.github.com"
+    "gitHubUrl": "https://www.github.com",
+    "image": {
+      "title": "Google map with custom market polygon",
+      "file": "https://geology.com/world/the-united-states-of-america-map.gif"
+    }
   },{
     "id": 2,
     "name": "Image Recognition",
     "description": "Uses YOLO to identify objects within image or video file.",
     "url": "https://www.google.com",
-    "gitHubUrl": "https://www.github.com"
+    "gitHubUrl": "https://www.github.com",
+    "image": {
+      "title": "Google map with custom market polygon",
+      "file": "https://geology.com/world/the-united-states-of-america-map.gif"
+    }
   },{
     "id": 3,
     "name": "Hackathons with GraphQL",
     "description": "Find interesting hackathons which meet your criteria.",
     "url": "https://www.google.com",
-    "gitHubUrl": "https://www.github.com"
+    "gitHubUrl": "https://www.github.com",
+    "image": {
+      "title": "Google map with custom market polygon",
+      "file": "https://geology.com/world/the-united-states-of-america-map.gif"
+    }
   },{
     "id": 4,
     "name": "R project",
     "description": "Demonstration of predicting values.",
     "url": "https://www.google.com",
-    "gitHubUrl": "https://www.github.com"
+    "gitHubUrl": "https://www.github.com",
+    "image": {
+      "title": "Google map with custom market polygon",
+      "file": "https://geology.com/world/the-united-states-of-america-map.gif"
+    }
   }
 ]

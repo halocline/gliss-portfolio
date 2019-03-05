@@ -3,8 +3,9 @@ import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles'
 import Button from '@material-ui/core/Button'
 import Card from '@material-ui/core/Card'
-import CardContent from '@material-ui/core/CardContent'
 import CardActions from '@material-ui/core/CardActions'
+import CardContent from '@material-ui/core/CardContent'
+import CardMedia from '@material-ui/core/CardMedia'
 import Divider from '@material-ui/core/Divider'
 import Typography from '@material-ui/core/Typography'
 import './project.css'
@@ -22,6 +23,19 @@ const styles = {
   pos: {
     marginBottom: 12,
   },
+  media: {
+    height: 140,
+  },
+}
+
+function handleCardHover (i) {
+  console.log('yo')
+  console.log(i)
+  console.log(i.props.name)
+  console.log(i.state)
+  i.setState({
+    elevation: 20
+  })
 }
 
 class Project extends React.Component {
@@ -30,9 +44,24 @@ class Project extends React.Component {
 
     return (
       <div className="Project">
-        <Card className={classes.card}>
+        <Card
+          className={classes.card}
+          elevation={ this.state.elevation || 1 }
+          onClick={ () => handleCardHover(this) }
+        >
+          <CardMedia
+            className={classes.media}
+            image={ this.props.image.file }
+            title={ this.props.image.title }
+          />
           <CardContent>
-            <Typography className={classes.title} component="h2" variant="subtitle1" color="textPrimary" gutterBottom>
+            <Typography
+              className={classes.title}
+              component="h2"
+              variant="subtitle1"
+              color="textPrimary"
+              gutterBottom
+            >
               { this.props.name }
             </Typography>
             <Typography variant="body1" color="textSecondary" gutterBottom>
