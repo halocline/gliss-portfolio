@@ -15,6 +15,7 @@ const styles = {
     //minWidth: 275,
     //maxWidth: 350,
     textAlign: 'left',
+    transitionDuration: '0.9s',
   },
   title: {
     //fontSize: 14,
@@ -28,17 +29,24 @@ const styles = {
   },
 }
 
-function handleCardHover (i) {
-  console.log('yo')
-  console.log(i)
-  console.log(i.props.name)
-  console.log(i.state)
-  i.setState({
-    elevation: 20
-  })
-}
+
 
 class Project extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      elevation: 1
+    }
+  }
+
+  handleMouseOver = () => {
+    this.setState(state => ({ elevation: 20 }))
+  }
+
+  handleMouseOut = () => {
+    this.setState(state => ({ elevation: 1 }))
+  }
+
   render() {
     const { classes } = this.props
 
@@ -46,8 +54,9 @@ class Project extends React.Component {
       <div className="Project">
         <Card
           className={classes.card}
-          elevation={ this.state.elevation || 1 }
-          onClick={ () => handleCardHover(this) }
+          elevation={ this.state.elevation }
+          onMouseOver={ this.handleMouseOver }
+          onMouseOut={ this.handleMouseOut }
         >
           <CardMedia
             className={classes.media}
