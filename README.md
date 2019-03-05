@@ -26,6 +26,9 @@ $ gcloud app logs tail -s default
 
 ```
 
+Quick Reference: https://medium.com/tech-tajawal/deploying-react-app-to-google-app-engine-a6ea0d5af132
+
+
 ## Create React App Documentation
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
