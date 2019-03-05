@@ -29,8 +29,6 @@ const styles = {
   },
 }
 
-
-
 class Project extends React.Component {
   constructor(props) {
     super(props);
