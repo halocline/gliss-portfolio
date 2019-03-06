@@ -3,11 +3,11 @@
     "id": 1,
     "name": "Market Polygons",
     "description": "Uses GeoJSON + turf.js to create a polygon for a market defined by a list of zipcodes.",
-    "url": "https://www.google.com",
-    "gitHubUrl": "https://www.github.com",
+    "url": "http://localhost:3002/",
+    "gitHubUrl": "https://bitbucket.org/halocline10/cb-market-polygons/src/master/",
     "image": {
       "title": "Google map with custom market polygon",
-      "file": "https://geology.com/world/the-united-states-of-america-map.gif"
+      "file": "./img/market-polygons.png"
     }
   },{
     "id": 2,
@@ -16,18 +16,18 @@
     "url": "https://www.google.com",
     "gitHubUrl": "https://www.github.com",
     "image": {
-      "title": "Google map with custom market polygon",
-      "file": "./img/YOLO Image Recognition.png"
+      "title": "YOLO Image Recognition & Classification",
+      "file": "./img/YOLO-Image-Recognition.png"
     }
   },{
     "id": 3,
     "name": "Hackathons with GraphQL",
     "description": "Find interesting hackathons which meet your criteria.",
-    "url": "https://www.google.com",
-    "gitHubUrl": "https://www.github.com",
+    "url": "http://localhost:3000/graphql",
+    "gitHubUrl": "https://github.com/rauston/hokitika",
     "image": {
       "title": "Google map with custom market polygon",
-      "file": "https://geology.com/world/the-united-states-of-america-map.gif"
+      "file": "./img/GraphQL-Find-Hackathons.png"
     }
   },{
     "id": 4,

@@ -77,10 +77,20 @@ class Project extends React.Component {
           </CardContent>
           <Divider variant="middle" />
           <CardActions>
-            <Button size="small" color="secondary" href={this.props.url}>
+            <Button
+              size="small"
+              color="secondary"
+              target="_blank"
+              href={this.props.url}
+            >
               Demo
             </Button>
-            <Button size="small" color="secondary" href={this.props.gitHubUrl}>
+            <Button
+              size="small"
+              color="secondary"
+              target="_blank"
+              href={this.props.gitHubUrl}
+            >
               GitHub
             </Button>
           </CardActions>
