@@ -14,11 +14,6 @@ const styles = theme => ({
 })
 
 function ProjectList(props) {
-  const classes = {
-    root: {
-      margin: 40,
-    }
-  }
   const projects = props.projects
   const listItems = projects.map( (project) =>
     <Grid item key={project.id} xs={12} sm={6} md={4} >

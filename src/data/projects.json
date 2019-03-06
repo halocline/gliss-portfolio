@@ -8,7 +8,15 @@
     "image": {
       "title": "Google map with custom market polygon",
       "file": "./img/market-polygons.png"
-    }
+    },
+    "technologies": [
+      { "key": 0, "label": "Node.js" },
+      { "key": 1, "label": "GeoJSON" },
+      { "key": 2, "label": "Turf.js" },
+      { "key": 3, "label": "MongoDB" },
+      { "key": 4, "label": "Handlebars" },
+      { "key": 5, "label": "Bootstrap" }
+    ]
   },{
     "id": 2,
     "name": "Image Recognition",
@@ -18,7 +26,12 @@
     "image": {
       "title": "YOLO Image Recognition & Classification",
       "file": "./img/YOLO-Image-Recognition.png"
-    }
+    },
+    "technologies": [
+      { "key": 0, "label": "GraphQL" },
+      { "key": 1, "label": "Apollo-Lambda" },
+      { "key": 2, "label": "Node.js" }
+    ]
   },{
     "id": 3,
     "name": "Hackathons with GraphQL",
@@ -28,7 +41,12 @@
     "image": {
       "title": "Google map with custom market polygon",
       "file": "./img/GraphQL-Find-Hackathons.png"
-    }
+    },
+    "technologies": [
+      { "key": 0, "label": "GraphQL" },
+      { "key": 1, "label": "Apollo-Lambda" },
+      { "key": 2, "label": "Node.js" }
+    ]
   },{
     "id": 4,
     "name": "R project",
@@ -38,6 +56,13 @@
     "image": {
       "title": "Google map with custom market polygon",
       "file": "https://geology.com/world/the-united-states-of-america-map.gif"
-    }
+    },
+    "technologies": [
+      { "key": 0, "label": "Angular" },
+      { "key": 1, "label": "jQuery" },
+      { "key": 2, "label": "Polymer" },
+      { "key": 3, "label": "React" },
+      { "key": 4, "label": "Vue.js" }
+    ]
   }
 ]

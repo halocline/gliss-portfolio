@@ -3,9 +3,11 @@ import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles'
 import Button from '@material-ui/core/Button'
 import Card from '@material-ui/core/Card'
+import CardActionArea from '@material-ui/core/CardActionArea'
 import CardActions from '@material-ui/core/CardActions'
 import CardContent from '@material-ui/core/CardContent'
 import CardMedia from '@material-ui/core/CardMedia'
+import Chip from '@material-ui/core/Chip'
 import Divider from '@material-ui/core/Divider'
 import Typography from '@material-ui/core/Typography'
 import './project.css'
@@ -27,6 +29,31 @@ const styles = {
   media: {
     height: 140,
   },
+  chip: {
+    height: 16,
+    fontSize: 12,
+    margin: 1,
+  },
+  chipArray: {
+    padding: 10
+  }
+}
+
+function ChipsArray(props) {
+  console.log(props);
+  const technologies = props.project.technologies
+
+  return (
+    technologies.map( tech => {
+      return (
+        <Chip
+          className={ props.classes.chip }
+          key={ tech.key }
+          label={ tech.label }
+        />
+      )
+    })
+  )
 }
 
 class Project extends React.Component {
@@ -56,25 +83,28 @@ class Project extends React.Component {
           onMouseOver={ this.handleMouseOver }
           onMouseOut={ this.handleMouseOut }
         >
-          <CardMedia
-            className={classes.media}
-            image={ this.props.image.file }
-            title={ this.props.image.title }
-          />
-          <CardContent>
-            <Typography
-              className={classes.title}
-              component="h2"
-              variant="subtitle1"
-              color="textPrimary"
-              gutterBottom
-            >
-              { this.props.name }
-            </Typography>
-            <Typography variant="body1" color="textSecondary" gutterBottom>
-              { this.props.description }
-            </Typography>
-          </CardContent>
+          <CardActionArea target="_blank" href={this.props.url}>
+            <CardMedia
+              className={classes.media}
+              image={ this.props.image.file }
+              title={ this.props.image.title }
+            />
+            <CardContent>
+              <Typography
+                className={classes.title}
+                component="h2"
+                variant="subtitle1"
+                color="textPrimary"
+                gutterBottom
+              >
+                { this.props.name }
+              </Typography>
+              <Typography variant="body1" color="textSecondary" gutterBottom>
+                { this.props.description }
+              </Typography>
+              <ChipsArray project={ this.props } classes={ classes } />
+            </CardContent>
+          </CardActionArea>
           <Divider variant="middle" />
           <CardActions>
             <Button
