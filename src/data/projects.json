@@ -13,7 +13,10 @@
       { "key": 0, "label": "Node.js" },
       { "key": 1, "label": "GeoJSON" },
       { "key": 2, "label": "Turf.js" },
+      { "key": 8, "label": "Express" },
       { "key": 3, "label": "MongoDB" },
+      { "key": 6, "label": "Google Maps API"},
+      { "key": 7, "label": "Google Geocode API"},
       { "key": 4, "label": "Handlebars" },
       { "key": 5, "label": "Bootstrap" }
     ]
