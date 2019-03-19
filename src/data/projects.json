@@ -7,7 +7,7 @@
     "gitHubUrl": "https://bitbucket.org/halocline10/cb-market-polygons/src/master/",
     "image": {
       "title": "Google map with custom market polygon",
-      "file": "./img/market-polygons.png"
+      "file": "./img/map-polygon.png"
     },
     "technologies": [
       { "key": 0, "label": "Node.js" },
@@ -23,17 +23,19 @@
   },{
     "id": 2,
     "name": "Image Recognition",
-    "description": "Uses YOLO to identify objects within image or video file.",
-    "url": "https://www.google.com",
-    "gitHubUrl": "https://www.github.com",
+    "description": "Identifies objects within image or video file. React frontend + Node/Express API running YOLO image recognition.",
+    "url": "http://localhost:3000/",
+    "gitHubUrl": "https://github.com/halocline/image-recognition",
     "image": {
       "title": "YOLO Image Recognition & Classification",
-      "file": "./img/YOLO-Image-Recognition.png"
+      "file": "./img/YOLO-Image-Recognition2.png"
     },
     "technologies": [
-      { "key": 0, "label": "GraphQL" },
-      { "key": 1, "label": "Apollo-Lambda" },
-      { "key": 2, "label": "Node.js" }
+      { "key": 0, "label": "Node.js" },
+      { "key": 1, "label": "React" },
+      { "key": 2, "label": "darknet" },
+      { "key": 3, "label": "YOLO" },
+      { "key": 2, "label": "Express" }
     ]
   },{
     "id": 3,
